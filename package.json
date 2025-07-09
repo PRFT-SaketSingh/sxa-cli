@@ -1,112 +1,101 @@
 {
-  "_from": "@sxa/cli@^10.2.0",
-  "_id": "@sxa/cli@10.3.0",
-  "_inBundle": false,
-  "_integrity": "sha1-JTCw1E5DLUH7Qptb9/348OGQo/c=",
-  "_location": "/@sxa/cli",
-  "_phantomChildren": {
-    "ansi-escapes": "4.3.2",
-    "asynckit": "0.4.0",
-    "aws-sign2": "0.7.0",
-    "aws4": "1.13.1",
-    "caseless": "0.12.0",
-    "cli-cursor": "3.1.0",
-    "cli-width": "3.0.0",
-    "combined-stream": "1.0.8",
-    "emoji-regex": "8.0.0",
-    "extend": "3.0.2",
-    "external-editor": "3.1.0",
-    "figures": "3.2.0",
-    "forever-agent": "0.6.1",
-    "har-validator": "5.1.5",
-    "http-signature": "1.2.0",
-    "inherits": "2.0.4",
-    "is-arguments": "1.1.1",
-    "is-generator-function": "1.0.10",
-    "is-typed-array": "1.1.13",
-    "is-typedarray": "1.0.0",
-    "isstream": "0.1.2",
-    "json-stringify-safe": "5.0.1",
-    "lodash": "4.17.21",
-    "mime-types": "2.1.35",
-    "mute-stream": "0.0.8",
-    "oauth-sign": "0.9.0",
-    "ora": "5.4.1",
-    "performance-now": "2.1.0",
-    "qs": "6.5.3",
-    "run-async": "2.4.1",
-    "safe-buffer": "5.1.2",
-    "through": "2.3.8",
-    "tough-cookie": "2.5.0",
-    "tunnel-agent": "0.6.0",
-    "uuid": "3.4.0",
-    "which-typed-array": "1.1.15"
-  },
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "@sxa/cli@^10.2.0",
-    "name": "@sxa/cli",
-    "escapedName": "@sxa%2fcli",
-    "scope": "@sxa",
-    "rawSpec": "^10.2.0",
-    "saveSpec": null,
-    "fetchSpec": "^10.2.0"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "https://sitecore.myget.org/F/sc-npm-packages/npm/@sxa/cli/-/@sxa/cli-10.3.0.tgz",
-  "_shasum": "2530b0d44e432d41fb429b5bf7fdf8f0e190a3f7",
-  "_spec": "@sxa/cli@^10.2.0",
-  "_where": "C:\\Projects\\HAP\\Code\\src\\Project\\HAP\\theme-2",
-  "author": "",
-  "bin": {
-    "sxa": "bin/sxa.js"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "@sxa/celt": "^10.3.0",
-    "@sxa/theme": "^10.3.0",
-    "arg": "^5.0.1",
-    "async": "^3.2.3",
-    "chalk": "^4.1.2",
-    "commander": "^9.2.0",
-    "esm": "^3.2.25",
-    "execa": "^5.1.1",
-    "fs-extra": "^10.1.0",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "inquirer": "^8.2.2",
-    "listr": "^0.14.3",
-    "ncp": "^2.0.0",
-    "request": "^2.88.2",
-    "rimraf": "^3.0.2",
-    "shelljs": "^0.8.5",
-    "spdx-license-list": "^6.5.0",
-    "util": "^0.12.1"
-  },
-  "deprecated": false,
-  "description": "SXA CLI for theme",
-  "homepage": "https://doc.sitecore.com/xp/en/developers/sxa/103/sitecore-experience-accelerator/modify-your-site-design-with-creative-exchange-live.html",
-  "keywords": [
-    "SXA",
-    "Creative Exchange Live",
-    "Sitecore Experience Accelerator",
-    "Gulp",
-    "Theme",
-    "CLI"
-  ],
-  "license": "ISC",
-  "main": "src/index.js",
-  "name": "@sxa/cli",
-  "preferGlobal": true,
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "doc": "rimraf ./jsdoc/ | jsdoc -c ./node_modules/@sxa/celt/jsdoc.json",
-    "gulp": "./node_modules/gulp/bin/gulp.js"
-  },
-  "version": "10.3.0"
+    "name": "@sxa/celt",
+    "version": "10.0.0",
+    "description": "Creative Exchange Live for SXA themes",
+    "keywords": [
+        "CELT",
+        "SXA",
+        "Creative Exchange Live",
+        "Sitecore Experience Accelerator",
+        "Gulp"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Sitecore Corporation A/S",
+    "homepage": "https://doc.sitecore.com/developers/sxa/18/sitecore-experience-accelerator/en/modify-your-site-design-with-creative-exchange-live.html",
+    "license": {
+        "type": "Sitecore MyGet License",
+        "url": "https://doc.sitecore.net/~/media/C23E989268EC4FA588108F839675A5B6.pdf"
+    },
+    "main": "index.js",
+    "dependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-transform-runtime": "^7.10.1",
+        "@babel/polyfill": "^7.8.7",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/register": "^7.9.0",
+        "@rollup/plugin-babel": "^5.0.3",
+        "@rollup/plugin-commonjs": "^13.0.0",
+        "@rollup/plugin-node-resolve": "^8.0.1",
+        "colors": "^1.4.0",
+        "docdash": "1.2.0",
+        "form-data": "^3.0.0",
+        "formstream": "^1.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-better-rollup": "^4.0.1",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-debug": "^4.0.0",
+        "gulp-eslint": "^6.0.0",
+        "gulp-filter": "^6.0.0",
+        "gulp-if": "^3.0.0",
+        "gulp-prompt": "^1.2.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sass-bulk-import": "^1.0.1",
+        "gulp-sass-grapher": "^1.0.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify-es": "^2.0.0",
+        "gulp-upload": "^1.0.0",
+        "gulp-watch": "^5.0.1",
+        "gulp.spritesmith": "^6.11.0",
+        "inquirer": "^7.1.0",
+        "jsdoc": "^3.6.3",
+        "path": "^0.12.7",
+        "request": "2.81.0",
+        "rimraf": "^3.0.2",
+        "rollup": "^1.32.1",
+        "urllib": "^2.34.2",
+        "vinyl-file": "^3.0.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/env"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "ecmaVersion": 5,
+        "sourceType": "module",
+        "rules": {
+            "no-alert": 0,
+            "no-bitwise": 0,
+            "camelcase": 1,
+            "curly": 1,
+            "eqeqeq": 0,
+            "no-eq-null": 0,
+            "guard-for-in": 1,
+            "no-empty": 1
+        },
+        "globals": {
+            "$": false,
+            "jQuery": false,
+            "Sitecore": false,
+            "XA": false,
+            "_": false
+        },
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    },
+    "devDependencies": {
+        "gulp-sass-bulk-importer": "^3.0.1",
+        "gulp-tap": "^2.0.0"
+    }
 }
